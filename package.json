@@ -1,11 +1,12 @@
 {
   "name": "if-react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "eslint **/*.js",
-    "prepare": "husky install"
+    "eject": "react-scripts eject"
   },
   "lint-staged": {
     "*.{js, jsx}": [
@@ -13,18 +14,31 @@
       "eslint --cache --fix"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Merildew/if-react.git"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "keywords": [],
-  "author": "Merildew",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Merildew/if-react/issues"
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^1.1.2"
   },
-  "homepage": "https://github.com/Merildew/if-react#readme",
   "devDependencies": {
+    "prop-types": "^15.7.2",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",

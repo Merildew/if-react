@@ -2,9 +2,6 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 function HotelsItem(props){
-  HotelsItem.propTypes = {
-    hotel: PropTypes.object,
-  };
   const { city, imageUrl, name, country } = props.hotel;
   return(
         <div className='homes-item' >
@@ -13,6 +10,10 @@ function HotelsItem(props){
           <span className="homes-place">{city}, {country}</span>
         </div>
       );
+
+  HotelsItem.propTypes = {
+    hotel: PropTypes.object,
+  };
 }
 
 export default HotelsItem;
