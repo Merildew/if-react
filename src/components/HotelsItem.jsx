@@ -10,10 +10,10 @@ function HotelsItem(props){
           <span className="homes-place">{city}, {country}</span>
         </div>
       );
-
-  HotelsItem.propTypes = {
-    hotel: PropTypes.object,
-  };
 }
+
+HotelsItem.propTypes = {
+  hotel: PropTypes.object,
+};
 
 export default HotelsItem;
